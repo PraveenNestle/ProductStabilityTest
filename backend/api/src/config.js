@@ -2,7 +2,7 @@ const bool = (v, d = false) => (v === undefined || v === '' ? d : /^(1|true|yes)
 export const config = {
   port: Number(process.env.PORT || 8080),
   localMode: bool(process.env.LOCAL_MODE, false),
-  staticDir: process.env.STATIC_DIR || '',
+  staticDir: process.env.STATIC_DIR || (process.env.LOCAL_MODE ? '' : '/home/site/wwwroot/frontend/dist'),
   allowedOrigins: (process.env.ALLOWED_ORIGINS || '').split(',').map((s) => s.trim()).filter(Boolean),
   entra: { tenantId: process.env.ENTRA_TENANT_ID || '', audience: process.env.ENTRA_API_AUDIENCE || '' },
   storage: {
