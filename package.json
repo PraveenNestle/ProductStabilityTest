@@ -1,0 +1,15 @@
+{
+  "name": "productstabilitytest",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Node package placeholder for CI — enables npm install in workflows.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "PraveenNestle",
+  "license": "MIT",
+  "dependencies": {}
+}
