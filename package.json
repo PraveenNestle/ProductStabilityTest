@@ -2,11 +2,11 @@
   "name": "productstabilitytest",
   "version": "0.1.0",
   "private": true,
-  "description": "Node package placeholder for CI — enables npm install in workflows.",
-  "main": "index.js",
+  "description": "R&D Stability Data Collection Tool deployment workspace.",
   "scripts": {
-    "test": "echo \"No tests specified\" && exit 0",
-    "start": "node index.js"
+    "build": "npm run build --prefix frontend",
+    "test": "npm test --prefix backend/api",
+    "start": "npm start --prefix backend/api"
   },
   "keywords": [],
   "author": "PraveenNestle",
